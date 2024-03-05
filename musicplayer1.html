@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="musicplayer1.css">
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Mono:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Mono:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        
+            <div class="logo">
+                <img src="./image/ninja_studio_logo.png" alt="logo" height="55px">
+                <p style="color:#ffff; margin-left:25px;">Favourites</p>
+            </div>
+            <div class="search-section">
+                <div class="search-box">
+                    <span  class="search-icon"><i class="fa-solid fa-magnifying-glass text-center" style="color:white; font-size:18px;"></i></span>
+                    <input type="text" placeholder="Search" id="search">
+                    <span class="microphone-icon"><i class="fa-solid fa-microphone" style="color: #ffffff; font-size:18px;"></i></span>
+                </div>
+                <span><i class="fa-solid fa-bell me-4 mt-2" style="color: #ffffff; font-size:26px;"></i></span>
+                <img src="./image/input_section_img.jpeg" alt="singer" class="input-section-img">
+            </div>
+       
+    </header>
+
+    <!-- main section -->
+    <div class="main-section">
+        <main >
+
+            <!-- main section(slider) -->
+            <div class="main-section-row1">
+                <section id="slider">
+                    <input type="radio" name="slider" id="s1" checked>
+                    <input type="radio" name="slider" id="s2">
+                    <input type="radio" name="slider" id="s3">
+                    <input type="radio" name="slider" id="s4">
+                    <input type="radio" name="slider" id="s5">
+                    <label for="s1" id="slide1"><img src="./image/carousel_image1.jpeg" alt=""></label>
+                    <label for="s2" id="slide2"><img src="./image/carousel_image2.jpeg" alt=""></label>
+                    <label for="s3" id="slide3"><img src="./image/carousel_image3.jpeg" alt=""></label>
+                    <label for="s4" id="slide4"><img src="./image/carousel-image4.jpeg" alt=""></label>
+                    <label for="s5" id="slide5"><img src="./image/carousel-image5.jpeg" alt=""></label>
+      
+      
+                      
+                  </section>
+    
+            </div>
+         <!-- main section row1   -->
+            <div class="second-row">
+                <h3 style="color:#ffff; margin-bottom:-25px;">Latest Release</h3>
+                <div class="main-section-row2" style="display:flex">
+                
+                    <div class="latest-release1" style="width:45%; display:flex;">
+                        <div class="child-col1" style="width:65%; display:flex;">
+                            <img src="./image/onism.jpeg" alt="latest-singer" width="40%" height="100%" >
+                            <div class="latest-release-content" >
+                                <h3 style="color:#ffff;">Onism</h3>
+                                <p>Aug 11,2017</p>
+                            </div>
+                        </div>
+                        <div class="child-col1" style="width:35%; display:flex; justify-content:flex-end" >
+                            <div class="ellipsis-container">
+                                <i class="fa-solid fa-ellipsis" style="color: #ffff; font-size:20px; margin-right:-24px; "></i>
+                                <div class="ellipse-dropdown-content">
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-play ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Play Now</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-plus ellipsis-icon" style="color: #01060e;"></i>
+                                        <p class="ellipsis-pcontent">Add To Queue</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-bars ellipsis-icon" style="color: #00040a;"></i>
+                                        <p class="ellipsis-pcontent">Add To Favourites</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-circle-info ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Get Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="ellipsis-time">4:40</p>
+                        </div>
+                    </div>
+                    <div class="latest-release1" style="width:45%; display:flex;">
+                        <div class="child-col1" style="width:65%; display:flex;">
+                            <img src="./image/onism.jpeg" alt="latest-singer" width="40%" height="100%" >
+                            <div class="latest-release-content" >
+                                <h3 style="color:#ffff;">Onism</h3>
+                                <p>Aug 11,2017</p>
+                            </div>
+                        </div>
+                        <div class="child-col1" style="width:35%; display:flex; justify-content:flex-end" >
+                            <div class="ellipsis-container">
+                                <i class="fa-solid fa-ellipsis" style="color: #ffff; font-size:20px; margin-right:-24px; "></i>
+                                <div class="ellipse-dropdown-content">
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-play ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Play Now</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-plus ellipsis-icon" style="color: #01060e;"></i>
+                                        <p class="ellipsis-pcontent">Add To Queue</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-bars ellipsis-icon" style="color: #00040a;"></i>
+                                        <p class="ellipsis-pcontent">Add To Favourites</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-circle-info ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Get Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="ellipsis-time">4:40</p>
+                        </div>
+                    </div>
+                </div>
+        <!-- main section row2 -->
+                <div class="main-section-row2" style="display:flex; margin-top:20px;">
+                    
+                    <div class="latest-release1" style="width:45%; display:flex; ">
+                        <div class="child-col1" style="width:65%; display:flex;">
+                            <img src="./image/onism.jpeg" alt="latest-singer" width="40%" height="100%" >
+                            <div class="latest-release-content" >
+                                <h3 style="color:#ffff;">Onism</h3>
+                                <p>Aug 11,2017</p>
+                            </div>
+                        </div>
+                        <div class="child-col1" style="width:35%; display:flex; justify-content:flex-end" >
+                            <div class="ellipsis-container">
+                                <i class="fa-solid fa-ellipsis" style="color: #ffff; font-size:20px; margin-right:-24px; "></i>
+                                <div class="ellipse-dropdown-content">
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-play ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Play Now</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-plus ellipsis-icon" style="color: #01060e;"></i>
+                                        <p class="ellipsis-pcontent">Add To Queue</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-bars ellipsis-icon" style="color: #00040a;"></i>
+                                        <p class="ellipsis-pcontent">Add To Favourites</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-circle-info ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Get Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="ellipsis-time">4:40</p>
+                        </div>
+                    </div>
+                    <div class="latest-release1" style="width:45%; display:flex;">
+                        <div class="child-col1" style="width:65%; display:flex;">
+                            <img src="./image/onism.jpeg" alt="latest-singer" width="40%" height="100%" >
+                            <div class="latest-release-content" >
+                                <h3 style="color:#ffff;">Onism</h3>
+                                <p>Aug 11,2017</p>
+                            </div>
+                        </div>
+                        <div class="child-col1" style="width:35%; display:flex; justify-content:flex-end" >
+                            <div class="ellipsis-container">
+                                <i class="fa-solid fa-ellipsis" style="color: #ffff; font-size:20px; margin-right:-24px; "></i>
+                                <div class="ellipse-dropdown-content">
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-play ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Play Now</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-plus ellipsis-icon" style="color: #01060e;"></i>
+                                        <p class="ellipsis-pcontent">Add To Queue</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-bars ellipsis-icon" style="color: #00040a;"></i>
+                                        <p class="ellipsis-pcontent">Add To Favourites</p>
+                                    </div><hr>
+                                    <div class="ellipse-dropdown-row" style="display:flex;">
+                                        <i class="fa-solid fa-circle-info ellipsis-icon" style="color: #010813;"></i>
+                                        <p class="ellipsis-pcontent">Get Info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="ellipsis-time">4:40</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- main section row3 -->
+            <div class="main-section-row3">
+                <h3 style="color:#ffff">Popular Artist</h3>
+                <div class="popular-artist-img-container" style="display:flex; justify-content:space-between;">
+                     <div class="popular-artist-img">
+                        <img class=" pupular-img" src="./image/ed_sheeran.jpeg" alt="">
+                        <div class="popular-hover-content">
+                            <a href="musicplayer2.html" class="play-icon"><i class="fa-solid fa-play song-play-icon" style="color: #ffffff;"></i></a>
+                        </div>
+                        
+                        <h4 style="color:#ffff">Ed Sheeran</h4>
+                     </div>
+                     <div class="popular-artist-img">
+                        <img class=" pupular-img" src="./image/cold_play.jpeg" alt="">
+                        <div class="popular-hover-content">
+                            <a href="musicplayer2.html" class="play-icon"><i class="fa-solid fa-play song-play-icon" style="color: #ffffff;"></i></a>
+                        </div>
+                        
+                        
+                        <h4 style="color:#ffff">ColdPlay</h4>
+                     </div>
+                     <div class="popular-artist-img">
+                        <img class=" pupular-img" src="./image/zayn.jpeg" alt="">
+                        <div class="popular-hover-content">
+                            <a href="musicplayer2.html" class="play-icon"><i class="fa-solid fa-play song-play-icon" style="color: #ffffff;"></i></a>
+                        </div>
+                        
+                        <h4 style="color:#ffff"> Zayn</h4>
+                     </div>
+                     <div class="popular-artist-img">
+                        <img class=" pupular-img" src="./image/charlie_puth.jpeg" alt="">
+                        <div class="popular-hover-content">
+                            <a href="musicplayer2.html" class="play-icon"><i class="fa-solid fa-play song-play-icon" style="color: #ffffff;"></i></a>
+                        </div>
+                        
+                        <h4 style="color:#ffff">Charlie Puth</h4>
+                     </div>
+                     <div class="popular-artist-img">
+                        <img class=" pupular-img" src="./image/Imagine_Dragon.jpeg" alt="">
+                        <div class="popular-hover-content">
+                            <a href="musicplayer2.html" class="play-icon"><i class="fa-solid fa-play song-play-icon" style="color: #ffffff;"></i></a>
+                        </div>
+                        
+                        <h4 style="color:#ffff">Imagine Dragon</h4>
+                     </div>
+                     <div class="popular-artist-img">
+                        <img class=" pupular-img" src="./image/bruno_mars.jpeg" alt="">
+                        <div class="popular-hover-content">
+                            <a href="musicplayer2.html" class="play-icon"><i class="fa-solid fa-play song-play-icon" style="color: #ffffff;"></i></a>
+                        </div>
+                        
+                        <h4 style="color:#ffff">Bruno Mars</h4>
+                     </div>
+                </div>
+                
+            </div>
+    <!-- main section row4 -->
+            <div class="main-section-row4">
+                <div class="station-img" ><img src="./image/stations.png" alt="station">   </div>
+                <div class="work-container">
+                    <div class="love-img"><img  src="./image/love.jpeg" alt="love"> </div>
+                    <p class="work-thumbnail">Love</p>
+                </div>
+                <div class="work-container">
+                    <div class="love-img"><img src="./image/retro.jpeg" alt="retro"> </div>
+                    <p class="work-thumbnail">Retro</p>
+                </div>
+                <div class="work-container" >
+                    <div class="love-img"><img src="./image/chill.jpeg" alt="chill"> </div>
+                    <p class="work-thumbnail">Chill</p>
+                </div>
+                <div class="work-container">
+                    <div class="love-img"><img src="./image/workout.jpeg" alt="workout" > </div>
+                    <p class="work-thumbnail workout-thumbnail">Workout</p>
+                </div>
+                <div class="work-container">
+                    <div class="love-img"><img src="./image/rock.jpeg"> </div>
+                    <p class="work-thumbnail">Rock</p>
+                </div>
+                <div class="work-container">
+                    <div class="love-img"><img src="./image/pop.jpeg" alt="pop"> </div>
+                    <p class="work-thumbnail">Pop</p>
+                </div>
+            </div>
+    <!-- main section row5 -->
+            <div class="main-section-row5">
+                <div class="zoom-image-container">
+                    <div class="zoom-image party-image"></div>
+                    <p style="left:35%;">Party</p>
+                </div>
+                <div class="zoom-image-container">
+                    <div class="zoom-image electronic-image"></div>
+                    <p >Electronic</p>
+                </div>
+                <div class="zoom-image-container">
+                    <div class="zoom-image trip-image"></div>
+                    <p >Road Trip</p>
+                </div>
+            </div>
+    <!-- main section row6 -->
+            <div class="main-section-row6">
+                <h3 style="color:#ffff">Latest English</h3>
+                <div class="english-song-container" style="display:flex; justify-content:space-between;">
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/mirage_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/flume_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/rosielowe_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/mirage_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/flume_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/rosielowe_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                </div>
+                
+            </div>
+    <!-- main section row7 -->
+            <div class="main-section-row7">
+                <h3 style="color:#ffff">Latest Hindi</h3>
+                <div class="english-song-container" style="display:flex; justify-content:space-between;">
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/mirage_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/flume_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/rosielowe_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/mirage_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/flume_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                     <div class="latest-eng-song-img">
+                        <img class=" english-singer-img" src="./image/rosielowe_singer.jpeg" alt="">
+                        <div class="about-img">
+                            <h4 style="color:#ffff">Onism</h4>
+                            <p>AUG 11,2017</p>
+                        </div>
+                        
+                     </div>
+                </div>
+                
+            </div>
+
+        </main>
+
+    <!-- aside section -->
+        <aside>
+            <div class="aside-first-row ">
+                <div class="quaue-heading quaue" style="color:#ffff;"> <h3>Quaue</h3></div>
+                <div class="quaue-link quaue dropdown">
+                    <a href="#dropdown" class="dropdown-link">Quaue <i class="fa-solid fa-less-than fa-rotate-270" style="color:#1e00ef; font-size:9px; "></i></a>
+                    <div class="dropdown-list" id="dropdown">
+                        <p class="dropdown-content">Playlist</p><hr>
+                        <p class="dropdown-content">Favourite Songs</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>01</p>
+                    <img src="./image/mirage_singer.jpeg" alt="" width="60px" height="60px" style=" margin-right:7%; margin-left:6%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Mirage</h4>
+                        <p>Else</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>02</p>
+                    <img src="./image/rosielowe_singer.jpeg" alt="" width="60px" height="60px" style=" margin-right:7%; margin-left:6%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Worry Bout </h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>03</p>
+                    <img src="./image/flume_singer.jpeg" alt="" width="60px" height="60px" style=" margin-right:7%; margin-left:6%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">New Skin</h4>
+                        <p>Flume</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>04</p>
+                    <img src="./image/rosielowe_singer.jpeg" alt="" width="60px" height="60px" style=" margin-right:7%; margin-left:6%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Worry Bout </h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>05</p>
+                    <img src="./image/flume_singer.jpeg" alt="" width="60px" height="60px" style=" margin-right:7%; margin-left:6%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">New Skin</h4>
+                        <p>Flume</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>01</p>
+                    <img src="./image/mirage_singer.jpeg" alt="" width="60px" height="60px" style="margin-right:7%; margin-left:6%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Mirage</h4>
+                        <p>Else</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>01</p>
+                    <img src="./image/rosielowe_singer.jpeg" alt="" width="60px" height="60px" style="margin-left:6%; margin-right:7%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Worry Bout </h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>02</p>
+                    <img src="./image/flume_singer.jpeg" alt="" width="60px" height="60px" style="margin-left:6%; margin-right:7%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">New Skin</h4>
+                        <p>Flume</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>03</p>
+                    <img src="./image/rosielowe_singer.jpeg" alt="" width="60px" height="60px" style="margin-left:5%; margin-right:7%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Worry Bout </h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>04</p>
+                    <img src="./image/flume_singer.jpeg" alt="" width="60px" height="60px" style="margin-left:6%; margin-right:7%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">New Skin</h4>
+                        <p>Flume</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>05</p>
+                    <img src="./image/mirage_singer.jpeg" alt="" width="60px" height="60px" style="margin-left:6%; margin-right:7%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Mirage</h4>
+                        <p >Else</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+            <div class="quaue-row aside-row">
+                <div class="quaue-img quaue">
+                    <p>01</p>
+                    <img src="./image/rosielowe_singer.jpeg" alt="" width="60px" height="60px" style="margin-left:6%; margin-right:7%">
+                    <div class="quaue-singer-name" >
+                        <h4 style="color:#ffff;">Worry Bout </h4>
+                        <p>Rosie Lowe</p>
+                    </div>
+                </div>
+                <div class="like-icon quaue"><i class="fa-regular fa-heart float-end" style="color: #c1c3c8;"></i></div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="selected-song-container" style="height:100%;">
+            <div class="song-image" style="height:100%">
+                <img src="./image/john_lennon.jpeg"  alt="song"  > 
+            </div>
+            <div class="song-name">
+                <h3>Imagine by John</h3>
+                <p>John Lennon</p>
+            </div>
+            <div><i class="fa-regular fa-heart" style="color: #bcbec2; font-size: 1.3rem; margin:0 0.2rem;"></i></div>
+            <div><i class="fa-solid fa-ban" style="color: #b2b4b8; font-size: 1.3rem;"></i></div>
+        </div>
+        <div class="song-control-container">
+            <div class="song-play-container">
+                <div><i class="fa-solid fa-shuffle" style="color: #787a7d; font-size: 1.3rem;"></i></div>
+                <div><i class="fa-solid fa-backward-step" style="color: #c4c4c4; font-size: 1.3rem;"></i></div>
+                <div><i class="fa-regular fa-circle-pause" style="color: #eaeaeb; font-size: 1.3rem;"></i></div>
+                <div><i class="fa-solid fa-forward-step" style="color: #d6d6d6; font-size: 1.3rem;"></i></div>
+                <div><i class="fa-solid fa-repeat" style="color: #787a7d; font-size: 1.3rem;"></i></div>
+            </div>
+            <div class="song-play-range">
+                <div style="color:#ffff; font-size:1.2rem;">1:39</div>
+                <input type="range" id="vol" name="vol" min="0" max="50" style="width:90%">
+                <div style="color:#ffff; font-size:1.2rem;">4:44</div>
+            </div>
+        </div>
+        <div class="volume-container">
+            <div><i class="fa-solid fa-bars-staggered" style="color: #a4a7ad; font-size: 1.3rem;"></i></div>
+            <div><i class="fa-solid fa-computer" style="color: #999da3; font-size: 1.3rem;"></i></div>
+            <div><i class="fa-solid fa-volume-high" style="color: #a0a2a6; font-size: 1.3rem;"></i></div>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+            <div><i class="fa-solid fa-up-right-and-down-left-from-center" style="color: #a1a3a5; font-size: 1.3rem;"></i></div>
+        </div>
+    </footer>
+</body>
+</html>
